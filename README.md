@@ -1,3 +1,6 @@
+# textify
+This is my first ever repository on GitHub. It includes an app that can manipulate text as you desire.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
