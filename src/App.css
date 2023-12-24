@@ -7,7 +7,7 @@
 
 .home:hover
 {
-  font-weight: bold;
+  font-family:cursive;
 }
 
 .about:hover
@@ -18,7 +18,64 @@
 
 .socials:hover
 {
-  font-family: cursive;
+  font-family:fantasy;
+}
+
+.center
+{
+  width: 50%;
+  margin-left: 25%;
+}
+
+.TA
+{
+  border-radius: 5px;
+  outline: none;
+}
+
+.UC
+{
+  background-color: rgb(70, 22, 108);
+  border: 2px ;
+  padding: 6px;
+  margin-left: 25%;
+  margin-top: 10px;
+}
+
+.LC
+{
+  background-color: rgb(70, 22, 108);
+  border: 2px ;
+  padding: 6px;
+  margin-left: 2%;
+  margin-top: 10px;
+}
+
+.bold
+{
+  background-color: rgb(70, 22, 108);
+  border: 2px ;
+  padding: 6px;
+  margin-left: 2%;
+  margin-top: 10px;
+}
+
+.Italic
+{
+  background-color: rgb(70, 22, 108);
+  border: 2px ;
+  padding: 6px;
+  margin-left: 2%;
+  margin-top: 10px;
+}
+
+
+.btn:hover
+{
+  scale: 1.25;
+  transition: 0.8s;
+  color: pink;
+  border-radius: 20px;
 }
 
 
