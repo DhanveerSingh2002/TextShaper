@@ -62,12 +62,12 @@ const Textform = () => {
         <br/>
     </div>
     <div>
-      <button className="btn btn-primary UC" onClick={HandleUC}>Convert to Uppercase</button>
-      <button className="btn btn-primary LC" onClick={HandleLC}>Convert to Lowercase</button>
-      <button className="btn btn-primary bold" onClick={HandleBold}>{isBold ? 'Unbold Text' : 'Bold Text' }</button>
-      <button className="btn btn-primary Italic" onClick={HandleItalic}>{isItalic ? 'Remove Italics' : 'Italicize Text'}</button>
-      <button className="btn btn-primary LC" onClick={HandleClear}>Clear Text</button>
-      <button className="btn btn-primary LC" onClick={HandleSpeak}>Speak</button>
+      <button className="BTN UC" onClick={HandleUC}>Convert to Uppercase</button>
+      <button className="BTN LC" onClick={HandleLC}>Convert to Lowercase</button>
+      <button className="BTN bold" onClick={HandleBold}>{isBold ? 'Unbold Text' : 'Bold Text' }</button>
+      <button className="BTN Italic" onClick={HandleItalic}>{isItalic ? 'Remove Italics' : 'Italicize Text'}</button>
+      <button className="BTN LC" onClick={HandleClear}>Clear Text</button>
+      <button className="BTN LC" onClick={HandleSpeak}>Speak</button>
     </div>
     <div>
       <h3 className='center text-2xl italic my-6'>Total words: </h3>

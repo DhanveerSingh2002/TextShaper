@@ -2,7 +2,7 @@
 {
   scale: 1.2;
   transition: 2s;
-  color: #04f3d0;
+  color: rgb(102, 102, 102);
 }
 
 .home:hover
@@ -23,8 +23,14 @@
 
 .center
 {
-  width: 60%;
+  width: 50%;
   margin-left: 25%;
+}
+
+.me
+{
+  width: 30%;
+  margin-left: 40%;
 }
 
 .TA
@@ -38,7 +44,7 @@
   background-color: rgb(70, 22, 108);
   border: 2px ;
   padding: 6px;
-  margin-left: 25%;
+  margin-left: 20%;
   margin-top: 10px;
   border-radius: 20px;
 }
@@ -74,18 +80,47 @@
 }
 
 
-.btn:hover
+.BTN:hover
 {
   scale: 1.25;
   transition: 0.8s;
-  color: #04f3d0;
-  border-radius: 20px;
+  color: rgb(102, 102, 102);
 }
 
-.BOLD
+.container-1
 {
-  font-weight: bold;
+  display: flexbox;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
+
+.item
+{
+  padding: 20px;
+}
+
+.item-1
+{
+  flex: 1 75%;
+  
+}
+
+.item-2
+{
+  flex: 1 25%;
+  
+}
+
+.item-3
+{
+  flex: 1 50%;
+}
+
+.item-4
+{
+  flex: 1 50%;
+}
+
 
 
 
