@@ -1,16 +1,33 @@
+import { useState } from 'react';
 import './App.css';
-import About from './components/About';
+import Alerts from './components/Alerts';
+// import About from './components/About';
 import Navbar from './components/Navbar';
-// import Textform from './components/Textform';
+import Textform from './components/Textform';
 
 function App() {
+
+  const[alert, setAlert] = useState(null);
+
+  const showAlert = (message) => {
+    setAlert({
+      message:message
+    })
+
+    setTimeout(() => {
+      setAlert(null);
+    }, 1500);
+  }
+
   return (
     <>
       <Navbar/>
-      {/* <div className="container">
-        <Textform/>
-      </div> */}
-      <About/>
+      <Alerts alert={alert}/>
+      <div className="container">
+        <Textform showAlert={showAlert}/>
+        
+      </div>
+      {/* <About/> */}
     </>
   );
 }

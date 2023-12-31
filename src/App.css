@@ -44,7 +44,7 @@
   background-color: rgb(70, 22, 108);
   border: 2px ;
   padding: 6px;
-  margin-left: 20%;
+  margin-left: 25%;
   margin-top: 10px;
   border-radius: 20px;
 }
@@ -79,6 +79,10 @@
   border-radius: 20px;
 }
 
+.BTN
+{
+  margin-top: 12px;
+}
 
 .BTN:hover
 {
@@ -120,6 +124,13 @@
 {
   flex: 1 50%;
 }
+
+.btn-cont
+{
+  width: 100%;
+  flex-wrap: wrap;
+}
+
 
 
 
