@@ -94,9 +94,9 @@ const Textform = (props) => {
       <button title="Small Alphabets" className="BTN LC" onClick={HandleLC}>Convert to Lowercase</button>
       <button title="Bold" className="BTN bold" onClick={HandleBold}>{isBold ? 'Unbold Text' : 'Bold Text' }</button>
       <button title="Italics" className="BTN Italic" onClick={HandleItalic}>{isItalic ? 'Remove Italics' : 'Italicize Text'}</button>
-      <button title="Clear the Textbox" className="BTN UC" onClick={HandleClear}>Clear Text</button>
-      <button title="Copy Text" className="BTN LC" onClick={HandleCopy}>&#128203;</button>
-      <button title="Speak Text" className="BTN LC" onClick={HandleSpeak}>&#127908;</button>
+      <button title="Clear the Textbox" className="BTN Clear" onClick={HandleClear}>Clear Text</button>
+      <button title="Copy Text" className="BTN Copy" onClick={HandleCopy}>&#128203;</button>
+      <button title="Speak Text" className="BTN Speak" onClick={HandleSpeak}>&#127908;</button>
     </div>
     <div>
       <h3 className='center text-2xl italic my-6'>Total words: </h3>
