@@ -16,57 +16,113 @@ const Textform = (props) => {
 
   const HandleUC = () => {
     setText(text.toUpperCase());
-    props.showAlert("Success : Converted to Uppercase.")
+
+    if(text==="")
+    {
+      props.showAlert("Failure : Please add some text.", "red")
+    }
+    else
+    {
+      props.showAlert("Success : Converted to Uppercase.")
+    }
   }
 
   const HandleLC = () => {
     setText(text.toLowerCase());
-    props.showAlert("Success : Converted to Lowercase.")
+    if(text==="")
+    {
+      props.showAlert("Failure : Please add some text.", "red")
+    }
+    else
+    {
+      props.showAlert("Success : Converted to lowercase.")
+    }
   }
 
   const HandleBold = () => {
     setIsBold(!isBold);
-    if(isBold===true)
+    if(text==="")
     {
-      props.showAlert("Success : Text Unbolded");
+      props.showAlert("Failure : Please add some text.", "red")
     }
     else
     {
-      props.showAlert("Success : Text Bolded");
+      if(isBold===true)
+      {
+        props.showAlert("Success : Text Unbolded");
+      }
+      else
+      {
+        props.showAlert("Success : Text Bolded");
+      }
     }
   };
 
   const HandleItalic = () => {
     setIsItalic(!isItalic);
-    if(isItalic===true)
+    if(text==="")
     {
-      props.showAlert("Success : Text Unitalicized");
+      props.showAlert("Failure : Please add some text.", "red")
     }
     else
     {
-      props.showAlert("Success : Text Italicized");
+      if(isItalic===true)
+      {
+        props.showAlert("Success : Text Italicized");
+      }
+      else
+      {
+        props.showAlert("Success : Text Unitalicizeded");
+      }
     }
   };
 
   const HandleClear = () => {
     setText("");
     setWordCount(0);
-    props.showAlert("Success : Text Cleared.")
+    if(text==="")
+    {
+      props.showAlert("Failure : Please add some text.", "red")
+    }
+    else
+    {
+      props.showAlert("Success : Text Cleared")
+    }
   };
 
   const HandleSpeak = () => {
     let msg = new SpeechSynthesisUtterance();
     msg.text = text;
     window.speechSynthesis.speak(msg);
-    props.showAlert("Success : Speaking... ")
+    if(text==="")
+    {
+      props.showAlert("Failure : Please add some text.", "red")
+    }
+    else
+    {
+      props.showAlert("Success : Speaking...")
+    }
   }
 
   const HandleCopy = () => {
     var cText = document.getElementById("textbox");
     cText.select();
-    navigator.clipboard.writeText(cText.value);
-    props.showAlert("Success : Text Copied.")
-  }
+
+    if (text === "") {
+        props.showAlert("Failure: Please add some text.", "red");
+    } else {
+        try {
+            if (document.execCommand("copy")) {
+                props.showAlert("Success: Text Copied");
+            } else {
+                throw new Error("Copy command not supported");
+            }
+        } catch (err) {
+            console.error("Unable to copy text", err);
+            props.showAlert("Failure: Unable to copy text. Please try again.");
+        }
+    }
+};
 
   const updateWordCount = (newText) => {
     const count = newText.trim() === '' ? 0 : newText.split(" ").filter(word => word !== '').length;

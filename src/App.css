@@ -1,24 +1,25 @@
-.name:hover
+.name
 {
-  scale: 1.2;
-  transition: 2s;
-  color: rgb(102, 102, 102);
+  color: white;
+}
+.home
+{
+  color: white;
+}
+.socials
+{
+  color: white;
 }
 
-.home:hover
+.TA
 {
-  font-family:cursive;
+  border: 2px solid black;
+  border-radius: 20px;
 }
 
-.about:hover
+.BTN
 {
-  font-style: italic;
-  transition-delay: 0ms;
-}
-
-.socials:hover
-{
-  font-family:fantasy;
+  color: white;
 }
 
 .center
@@ -114,12 +115,7 @@
   margin-top: 12px;
 }
 
-.BTN:hover
-{
-  scale: 1.25;
-  transition: 0.8s;
-  color: rgb(102, 102, 102);
-}
+
 
 .container-1
 {
@@ -170,24 +166,6 @@
 .links
 {
   margin-top: 10px;
-}
-
-.linkedinicon:hover
-{
-  color: rgb(57, 57, 205);
-  cursor: pointer;
-}
-
-.instagramicon:hover
-{
-  color: rgb(225, 123, 140);
-  cursor: pointer;
-}
-
-.githubicon:hover
-{
-  color: grey;
-  cursor: pointer;
 }
 
 .me
@@ -386,6 +364,12 @@
 }
 
 @media (max-width: 372.5px) {
+
+  .Speak
+  {
+    margin-left: 3%;
+  }
+
   .BTN
   {
     font-size: 14.5px;
@@ -632,6 +616,52 @@
   {
     font-size: 35px;
   }
+}
+
+@media (min-width:1000px) {
+
+  .name:hover
+  {
+    scale: 1.2;
+    transition: 2s;
+    color: rgb(102, 102, 102);
+  }
+
+  .home:hover
+  {
+    font-family:cursive;
+  }
+
+  .socials:hover
+  {
+    font-family:fantasy;
+  }
+
+  .linkedinicon:hover
+  {
+    color: rgb(57, 57, 205);
+    cursor: pointer;
+  }
+
+  .instagramicon:hover
+  {
+    color: rgb(225, 123, 140);
+    cursor: pointer;
+  }
+
+  .githubicon:hover
+  {
+    color: grey;
+    cursor: pointer;
+  }
+
+  .BTN:hover
+  {
+    scale: 1.25;
+    transition: 0.8s;
+    color: pink;
+  }
+
 }
 
 
