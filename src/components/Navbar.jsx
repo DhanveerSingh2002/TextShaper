@@ -16,7 +16,7 @@ const Navbar = () => {
               <Link to="/">Home</Link>
             </li>
             <li className="socials nav-items ddl -mt-1  pt-1  cursor-pointer inline-block text-xl sm:text-lg md:text-xl lg:text-2xl xl:text-3xl sm:pt-0 sm:ml-2 sm:mr-2 md:pt-0 md:ml-2 md:mr-2 lg:pt-1 lg:ml-4 lg:mr-4 xl:pt-1 xl:ml-4 xl:mr-4">
-              <Link to="/about">About & Socials</Link>
+              <Link to="/about">About</Link>
             </li>
           </ul>
         </nav>
