@@ -284,7 +284,21 @@
 
 @media (max-width: 522.5px) {
 
-  .nav-items
+  .name
+  {
+    font-size: 18px;
+    padding-bottom: 0px;
+    margin-top: -12px;
+  }
+
+  .home
+  {
+    font-size: 18px;
+    padding-bottom: 0px;
+    margin-top: -12px;
+  }
+
+  .socials
   {
     font-size: 18px;
     padding-bottom: 0px;
@@ -387,6 +401,7 @@
   
   .item-1
   {
+    margin-top: 0px;
     font-size: 24px;
   }
 
